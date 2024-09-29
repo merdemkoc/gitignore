@@ -37,12 +37,6 @@ Cargo.lock
 *.pdb
 *.ilk
 
-# Fingerprint files
-/.fingerprint
-
-# Profile output
-/ncspot/
-
 # Coverage directory used by tools like tarpaulin
 /coverage/
 
@@ -102,35 +96,90 @@ Cargo.lock
 # CMake
 cmake-build-*/
 
-# Mongo Explorer plugin
-.idea/**/mongoSettings.xml
-
 # File-based project format
 *.iws
 
 # IntelliJ
 out/
 
-# mpeltonen/sbt-idea plugin
-.idea_modules/
-
 # JIRA plugin
 atlassian-ide-plugin.xml
-
-# Cursive Clojure plugin
-.idea/replstate.xml
-
-# SonarLint plugin
-.idea/sonarlint/
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
 
-# Android studio 3.1+ serialized cache file
-.idea/caches/build_file_checksums.ser
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Ignore Cargo's cache directory
+/.cargo/
+
+# Ignore rustfmt backup files
+**/*.rs.bk
+
+# SQLx
+.sqlx/
+
+# PostgreSQL
+*.sql
+*.dump
+
+# Redis
+*.rdb
+*.aof
+
+# Kafka
+*.log
+*.log.*
+
+# Sentry
+.sentry-native/
+
+# Ignore any local certificates or keys
+*.pem
+*.key
+*.crt
+
+# Ignore any data directories
+/data/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Docker
+.docker/
+docker-compose.override.yml
+Dockerfile.local
+*.dockerignore
+
+# Docker volumes
+volumes/
+
+# Docker env files
+.env.docker
+.env.*.local
+
+# Docker build context
+.dockerignore
